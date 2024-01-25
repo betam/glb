@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/fatih/color"
+	"github.com/pborman/getopt/v2"
 	"github.com/sirupsen/logrus"
 	"io"
 	"os"

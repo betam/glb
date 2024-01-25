@@ -8,6 +8,7 @@ require (
 	github.com/gorilla/websocket v1.5.1
 	github.com/jmoiron/sqlx v1.3.5
 	github.com/joho/godotenv v1.5.1
+	github.com/pborman/getopt/v2 v2.1.0
 	github.com/rabbitmq/amqp091-go v1.9.0
 	github.com/shomali11/util v0.0.0-20220717175126-f0771b70947f
 	github.com/sirupsen/logrus v1.9.3
