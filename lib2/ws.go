@@ -57,7 +57,8 @@ func (server *WSServer) WriteMessage(message []byte) {
 		err := conn.WriteMessage(websocket.TextMessage, message)
 		if err != nil {
 			log.Debugf("Can not process msg to socket: %v", err)
-			server.mu.Unlock()
+			conn.Close()
+			delete(server.clients, conn)
 		}
 		server.mu.Unlock()
 	}
